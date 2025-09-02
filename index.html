@@ -6,8 +6,13 @@
   <title>Drogenlied</title>
 </head>
   
-<body style="background-image: url('img/dancer.gif'), url('img/background.gif');">
-  <audio src="'audio/drogenlied.mp3'" autoplay></audio>
+<body style="height: 100vh; background-image: url('img/dancer.gif'), url('img/background.gif');">
+  <audio id="audio" src="audio/drogenlied.mp3" autoplay></audio>
+  <script>
+      document.body.onclick = () => {
+        document.querySelector('#audio').play();
+      }
+  </script>
 </body>
   
 </html>

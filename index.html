@@ -10,7 +10,7 @@
   <audio id="audio" controls autoplay loop src="audio/drogenlied.mp3"></audio>
   <script>
       document.body.onclick = () => {
-        const audio = document.querySelector('#audio').play();
+        const audio = document.querySelector('#audio');
         if(audio.paused) audio.play() else audio.pause();
       }
   </script>

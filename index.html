@@ -11,8 +11,7 @@
       const audio = new Audio('audio/drogenlied.mp3');
       audio.loop = true;
       window.onload = () => {
-        const wrapper = document.querySelector('#wrapper');
-        wrapper.onclick = () => {
+        document.body.onclick = () => {
           audio.play();
         }
       }

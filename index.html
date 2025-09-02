@@ -7,7 +7,6 @@
         const audio = new Audio('audio/drogenlied.mp3');
         audio.loop = true;
         window.onload = () => {
-          alert("Tippe auf eine beliebige Stelle der Seite um das Lied abzuspielen.");
           const wrapper = document.querySelector('#wrapper');
           wrapper.onclick = () => {
             audio.play();
